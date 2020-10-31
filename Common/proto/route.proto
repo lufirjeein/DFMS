@@ -1,0 +1,49 @@
+package DFMS.ROUTE;
+
+
+message getLatestVersionRequest {}
+message getLatestVersionResponse {
+	optional string versionNo = 1;
+	optional string versionUpdateMsg = 2;
+	optional uint32 errorCode = 3;
+}
+
+message userLoginRequest {
+	optional string username = 1;
+	optional string password = 2;
+	optional string macAddress = 3;
+}
+message userLoginResponse {
+	optional string username = 1;
+	optional string sessionId = 2;
+	optional uint64 loginTime = 3;
+	optional uint32 errorCode = 4;
+}
+
+enum eFileType {
+	eDirType = 0;
+	eDocType = 1;
+	eGeneralType = 2;
+}
+enum eFilePermis {
+	eDenied = 0;
+	eReadOnly = 1;
+	eWriteOnly = 2;
+	eRW = 3;
+}
+message tFile {
+	optional string fileName = 1;
+	optional eFileType fileType = 2;
+	optional eFilePermis filePermis = 3;
+}
+message getDirFilesNameRequest {
+	optional uint32 reqId = 1;
+	optional string authUUID = 2; // username+mac+time+sessionid
+	optional string dirStr = 3;
+}
+message getDirFilesNameResponse {
+	optional uint32 reqId = 1;
+	optional string dirStr = 2;
+	repeated tFile files = 3;
+	optional uint32 errorCode = 4;
+}
