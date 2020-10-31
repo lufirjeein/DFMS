@@ -4,10 +4,14 @@
     > Mail: t657645537@126.com 
     > Created Time: 2015年02月02日 星期一 17时51分44秒
  ************************************************************************/
+#ifndef NETWORK_SERVERAPP
+#define NETWORK_SERVERAPP
 
 #include "clientSession.h"
 #include <iostream>
+#include <xlib/log.h>
 using namespace std;
+US_XLIB_NS;
 
 class serverApp
 {
@@ -31,6 +35,7 @@ class serverApp
     void handle_accept(const boost::system::error_code& error,session_ptr& session)
     {
 		if (!error) {
+			write_log(E_LOG_INFO,"[serverApp::handle_accept]");
 			session->start();
 			session_ptr new_session(new clientSession(m_ioservice));
 			m_acceptor.async_accept(new_session->socket(),
@@ -44,4 +49,6 @@ class serverApp
     boost::asio::io_service& m_ioservice;
     tcp::acceptor m_acceptor;
 };
+
+#endif
 

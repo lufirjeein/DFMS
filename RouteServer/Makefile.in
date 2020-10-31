@@ -135,7 +135,7 @@ CXXCPP = @CXXCPP@
 CXXDEPMODE = @CXXDEPMODE@
 CXXFLAGS = @CXXFLAGS@
 CYGPATH_W = @CYGPATH_W@
-DEFS = @DEFS@
+DEFS = @DEFS@ -DDEBUG
 DEPDIR = @DEPDIR@
 DLLTOOL = @DLLTOOL@
 DSYMUTIL = @DSYMUTIL@
@@ -243,6 +243,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
 route_SOURCES = main.cc ./proto/route.pb.cc ./proto/route.pb.h ./handler/handlerSession.h ./handler/handlerSession.cc ./handler/handler.h ./handler/handler.cc ../Common/network/serverApp.h ../Common/network/clientSession.h ../Common/network/clientSession.cc
+INCLUDES = -I../Common/
 all: all-am
 
 .SUFFIXES:

@@ -24,6 +24,7 @@ AC_CHECK_LIB([xlib], [main])
 AC_CHECK_LIB([protobuf], [main])
 AC_CHECK_LIB([boost], [main])
 AC_CHECK_LIB([boost_system], [main])
+AC_CHECK_LIB([boost_thread], [main])
 PKG_CHECK_MODULES([protobuf], [protobuf])
 
 # Checks for header files.

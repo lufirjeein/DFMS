@@ -17,7 +17,7 @@
 #include <google/protobuf/text_format.h>
 #undef _SHARED_PTR_H
 #include <string>
-#include "../Common/network/serverApp.h"
+#include "network/serverApp.h"
 using namespace std;
 using namespace google::protobuf;
 using namespace DFMS::ROUTE;
