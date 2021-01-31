@@ -10,6 +10,7 @@
 #include "clientSession.h"
 #include <iostream>
 #include <xlib/log.h>
+#include <xlib/queue.h>
 using namespace std;
 US_XLIB_NS;
 
@@ -17,11 +18,12 @@ class serverApp
 {
     typedef boost::shared_ptr<clientSession> session_ptr;
  public:
-    serverApp(boost::asio::io_service& ioservice,tcp::endpoint& endpoint)
+ serverApp(boost::asio::io_service& ioservice,tcp::endpoint& endpoint,x_queue* queue)
 	:m_ioservice(ioservice),
-	m_acceptor(ioservice,endpoint)
+	m_acceptor(ioservice,endpoint),
+	m_pQueue(queue)
 	{
-	    session_ptr new_session(new clientSession(ioservice));
+	    session_ptr new_session(new clientSession(ioservice,m_pQueue));
 	    m_acceptor.async_accept(new_session->socket(),
 				    boost::bind(&serverApp::handle_accept,this,
 						boost::asio::placeholders::error,
@@ -37,17 +39,18 @@ class serverApp
 		if (!error) {
 			write_log(E_LOG_INFO,"[serverApp::handle_accept]");
 			session->start();
-			session_ptr new_session(new clientSession(m_ioservice));
+			session_ptr new_session(new clientSession(m_ioservice,m_pQueue));
 			m_acceptor.async_accept(new_session->socket(),
 					boost::bind(&serverApp::handle_accept,this,
 						boost::asio::placeholders::error,
 						new_session));
 		}
-	}
+    }
 
  private:
     boost::asio::io_service& m_ioservice;
     tcp::acceptor m_acceptor;
+    x_queue* m_pQueue;
 };
 
 #endif

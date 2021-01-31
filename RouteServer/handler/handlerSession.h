@@ -6,18 +6,22 @@
  ************************************************************************/
 
 #include "../proto/route.pb.h"
+#include "network/clientSession.h"
 #include <iostream>
 using namespace std;
+using namespace DFMS::ROUTE;
 
 #ifndef _HANDLER_SESSION_H
 #define _HANDLER_SESSION_H
 
 class handlerSession {
-	public:
-		handlerSession();
-		~handlerSession();
+ public:
+    handlerSession();
+    ~handlerSession();
 	
-		int receiveMsg();
+    int handleMsg(Message & _msg);
+ private:
+    int handleLogin(userLoginRequest & _userLoginRequest);
 };
 
 #endif

@@ -8,43 +8,25 @@
 #ifndef NETWORK_CLIENT_SESSION
 #define NETWORK_CLIENT_SESSION
 
-#include <iostream>
-#include <boost/asio.hpp>
-#include <boost/shared_ptr.hpp>
+#include "__common.h"
+#include <string>
 #include <boost/enable_shared_from_this.hpp>
-#include <boost/bind.hpp>
-using namespace std;
-using boost::asio::ip::tcp;
-#define max_len 1024
-
-// data head struct
-#pragma pack(1)
-typedef struct __dataHead {
-    /*******************/
-    unsigned int _version;
-
-    /*******************/
-    unsigned char _reqID[2];
-    unsigned char _reqType[2];
-    /*******************/ 
-
-    unsigned int _dataLen;
-    
-} dataHead;
-#pragma pack()
+#include <xlib/queue.h>
+US_XLIB_NS;
 
 class clientSession
 	: public boost::enable_shared_from_this<clientSession>
 {
 	public:
-		clientSession(boost::asio::io_service& ioservice)
-			:m_socket(ioservice)
+ clientSession(boost::asio::io_service& ioservice,x_queue* queue)
+     :m_socket(ioservice),
+     m_pQueue(queue)
 		{
 		    cleanData();
 		}
 		~clientSession()
 		{
-			
+		    m_socket.close();
 		}
 
 		tcp::socket& socket()
@@ -62,12 +44,14 @@ class clientSession
 		void handle_write(const boost::system::error_code& error);
 		void handle_read_head(const boost::system::error_code& error,std::size_t len);
 		void handle_read(const boost::system::error_code& error,std::size_t len);
+		// since recevie all data 
+		// process msg
+		void recevied();
 	private:
 		tcp::socket m_socket;
 		char m_head[sizeof(dataHead)];
 		char m_data[max_len];
+		x_queue* m_pQueue;
 };
-
-
 
 #endif

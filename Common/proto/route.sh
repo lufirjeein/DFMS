@@ -6,3 +6,4 @@
 #########################################################################
 #!/bin/bash
 protoc --cpp_out=../../RouteServer/proto/ route.proto
+protoc --python_out=../../Test/RouteServer/ route.proto

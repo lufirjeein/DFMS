@@ -58,16 +58,16 @@ void protobuf_AssignDesc_route_2eproto() {
   static const int getLatestVersionRequest_offsets_[1] = {
   };
   getLatestVersionRequest_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       getLatestVersionRequest_descriptor_,
       getLatestVersionRequest::default_instance_,
       getLatestVersionRequest_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionRequest, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionRequest, _unknown_fields_),
       -1,
-      -1,
-      sizeof(getLatestVersionRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionRequest, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(getLatestVersionRequest));
   getLatestVersionResponse_descriptor_ = file->message_type(1);
   static const int getLatestVersionResponse_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionResponse, versionno_),
@@ -75,16 +75,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionResponse, errorcode_),
   };
   getLatestVersionResponse_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       getLatestVersionResponse_descriptor_,
       getLatestVersionResponse::default_instance_,
       getLatestVersionResponse_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionResponse, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionResponse, _unknown_fields_),
       -1,
-      -1,
-      sizeof(getLatestVersionResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getLatestVersionResponse, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(getLatestVersionResponse));
   userLoginRequest_descriptor_ = file->message_type(2);
   static const int userLoginRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginRequest, username_),
@@ -92,16 +92,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginRequest, macaddress_),
   };
   userLoginRequest_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       userLoginRequest_descriptor_,
       userLoginRequest::default_instance_,
       userLoginRequest_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginRequest, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginRequest, _unknown_fields_),
       -1,
-      -1,
-      sizeof(userLoginRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginRequest, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(userLoginRequest));
   userLoginResponse_descriptor_ = file->message_type(3);
   static const int userLoginResponse_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginResponse, username_),
@@ -110,16 +110,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginResponse, errorcode_),
   };
   userLoginResponse_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       userLoginResponse_descriptor_,
       userLoginResponse::default_instance_,
       userLoginResponse_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginResponse, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginResponse, _unknown_fields_),
       -1,
-      -1,
-      sizeof(userLoginResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(userLoginResponse, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(userLoginResponse));
   tFile_descriptor_ = file->message_type(4);
   static const int tFile_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tFile, filename_),
@@ -127,16 +127,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tFile, filepermis_),
   };
   tFile_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       tFile_descriptor_,
       tFile::default_instance_,
       tFile_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tFile, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tFile, _unknown_fields_),
       -1,
-      -1,
-      sizeof(tFile),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(tFile, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(tFile));
   getDirFilesNameRequest_descriptor_ = file->message_type(5);
   static const int getDirFilesNameRequest_offsets_[3] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameRequest, reqid_),
@@ -144,16 +144,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameRequest, dirstr_),
   };
   getDirFilesNameRequest_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       getDirFilesNameRequest_descriptor_,
       getDirFilesNameRequest::default_instance_,
       getDirFilesNameRequest_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameRequest, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameRequest, _unknown_fields_),
       -1,
-      -1,
-      sizeof(getDirFilesNameRequest),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameRequest, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(getDirFilesNameRequest));
   getDirFilesNameResponse_descriptor_ = file->message_type(6);
   static const int getDirFilesNameResponse_offsets_[4] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameResponse, reqid_),
@@ -162,16 +162,16 @@ void protobuf_AssignDesc_route_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameResponse, errorcode_),
   };
   getDirFilesNameResponse_reflection_ =
-    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+    new ::google::protobuf::internal::GeneratedMessageReflection(
       getDirFilesNameResponse_descriptor_,
       getDirFilesNameResponse::default_instance_,
       getDirFilesNameResponse_offsets_,
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameResponse, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameResponse, _unknown_fields_),
       -1,
-      -1,
-      sizeof(getDirFilesNameResponse),
-      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(getDirFilesNameResponse, _internal_metadata_),
-      -1);
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(getDirFilesNameResponse));
   eFileType_descriptor_ = file->enum_type(0);
   eFilePermis_descriptor_ = file->enum_type(1);
 }
@@ -187,19 +187,19 @@ inline void protobuf_AssignDescriptorsOnce() {
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      getLatestVersionRequest_descriptor_, &getLatestVersionRequest::default_instance());
+    getLatestVersionRequest_descriptor_, &getLatestVersionRequest::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      getLatestVersionResponse_descriptor_, &getLatestVersionResponse::default_instance());
+    getLatestVersionResponse_descriptor_, &getLatestVersionResponse::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      userLoginRequest_descriptor_, &userLoginRequest::default_instance());
+    userLoginRequest_descriptor_, &userLoginRequest::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      userLoginResponse_descriptor_, &userLoginResponse::default_instance());
+    userLoginResponse_descriptor_, &userLoginResponse::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      tFile_descriptor_, &tFile::default_instance());
+    tFile_descriptor_, &tFile::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      getDirFilesNameRequest_descriptor_, &getDirFilesNameRequest::default_instance());
+    getDirFilesNameRequest_descriptor_, &getDirFilesNameRequest::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
-      getDirFilesNameResponse_descriptor_, &getDirFilesNameResponse::default_instance());
+    getDirFilesNameResponse_descriptor_, &getDirFilesNameResponse::default_instance());
 }
 
 }  // namespace
@@ -304,36 +304,23 @@ bool eFilePermis_IsValid(int value) {
 }
 
 
-namespace {
-
-static void MergeFromFail(int line) GOOGLE_ATTRIBUTE_COLD;
-static void MergeFromFail(int line) {
-  GOOGLE_CHECK(false) << __FILE__ << ":" << line;
-}
-
-}  // namespace
-
-
 // ===================================================================
 
 #ifndef _MSC_VER
 #endif  // !_MSC_VER
 
 getLatestVersionRequest::getLatestVersionRequest()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.getLatestVersionRequest)
 }
 
 void getLatestVersionRequest::InitAsDefaultInstance() {
 }
 
 getLatestVersionRequest::getLatestVersionRequest(const getLatestVersionRequest& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.getLatestVersionRequest)
 }
 
 void getLatestVersionRequest::SharedCtor() {
@@ -342,7 +329,6 @@ void getLatestVersionRequest::SharedCtor() {
 }
 
 getLatestVersionRequest::~getLatestVersionRequest() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.getLatestVersionRequest)
   SharedDtor();
 }
 
@@ -368,73 +354,52 @@ const getLatestVersionRequest& getLatestVersionRequest::default_instance() {
 
 getLatestVersionRequest* getLatestVersionRequest::default_instance_ = NULL;
 
-getLatestVersionRequest* getLatestVersionRequest::New(::google::protobuf::Arena* arena) const {
-  getLatestVersionRequest* n = new getLatestVersionRequest;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+getLatestVersionRequest* getLatestVersionRequest::New() const {
+  return new getLatestVersionRequest;
 }
 
 void getLatestVersionRequest::Clear() {
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool getLatestVersionRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.getLatestVersionRequest)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
-  handle_unusual:
-    if (tag == 0 ||
-        ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+  while ((tag = input->ReadTag()) != 0) {
+    if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
         ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-      goto success;
+      return true;
     }
     DO_(::google::protobuf::internal::WireFormat::SkipField(
           input, tag, mutable_unknown_fields()));
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.getLatestVersionRequest)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.getLatestVersionRequest)
-  return false;
 #undef DO_
 }
 
 void getLatestVersionRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.getLatestVersionRequest)
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.getLatestVersionRequest)
 }
 
 ::google::protobuf::uint8* getLatestVersionRequest::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.getLatestVersionRequest)
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.getLatestVersionRequest)
   return target;
 }
 
 int getLatestVersionRequest::ByteSize() const {
   int total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -446,7 +411,7 @@ int getLatestVersionRequest::ByteSize() const {
 }
 
 void getLatestVersionRequest::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const getLatestVersionRequest* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const getLatestVersionRequest*>(
       &from);
@@ -458,10 +423,8 @@ void getLatestVersionRequest::MergeFrom(const ::google::protobuf::Message& from)
 }
 
 void getLatestVersionRequest::MergeFrom(const getLatestVersionRequest& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  GOOGLE_CHECK_NE(&from, this);
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void getLatestVersionRequest::CopyFrom(const ::google::protobuf::Message& from) {
@@ -482,12 +445,10 @@ bool getLatestVersionRequest::IsInitialized() const {
 }
 
 void getLatestVersionRequest::Swap(getLatestVersionRequest* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void getLatestVersionRequest::InternalSwap(getLatestVersionRequest* other) {
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata getLatestVersionRequest::GetMetadata() const {
@@ -508,39 +469,38 @@ const int getLatestVersionResponse::kErrorCodeFieldNumber;
 #endif  // !_MSC_VER
 
 getLatestVersionResponse::getLatestVersionResponse()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.getLatestVersionResponse)
 }
 
 void getLatestVersionResponse::InitAsDefaultInstance() {
 }
 
 getLatestVersionResponse::getLatestVersionResponse(const getLatestVersionResponse& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.getLatestVersionResponse)
 }
 
 void getLatestVersionResponse::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  versionno_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  versionupdatemsg_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  versionno_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  versionupdatemsg_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   errorcode_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 getLatestVersionResponse::~getLatestVersionResponse() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.getLatestVersionResponse)
   SharedDtor();
 }
 
 void getLatestVersionResponse::SharedDtor() {
-  versionno_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  versionupdatemsg_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (versionno_ != &::google::protobuf::internal::kEmptyString) {
+    delete versionno_;
+  }
+  if (versionupdatemsg_ != &::google::protobuf::internal::kEmptyString) {
+    delete versionupdatemsg_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -562,51 +522,45 @@ const getLatestVersionResponse& getLatestVersionResponse::default_instance() {
 
 getLatestVersionResponse* getLatestVersionResponse::default_instance_ = NULL;
 
-getLatestVersionResponse* getLatestVersionResponse::New(::google::protobuf::Arena* arena) const {
-  getLatestVersionResponse* n = new getLatestVersionResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+getLatestVersionResponse* getLatestVersionResponse::New() const {
+  return new getLatestVersionResponse;
 }
 
 void getLatestVersionResponse::Clear() {
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (has_versionno()) {
-      versionno_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (versionno_ != &::google::protobuf::internal::kEmptyString) {
+        versionno_->clear();
+      }
     }
     if (has_versionupdatemsg()) {
-      versionupdatemsg_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (versionupdatemsg_ != &::google::protobuf::internal::kEmptyString) {
+        versionupdatemsg_->clear();
+      }
     }
     errorcode_ = 0u;
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool getLatestVersionResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.getLatestVersionResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string versionNo = 1;
       case 1: {
-        if (tag == 10) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_versionno()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->versionno().data(), this->versionno().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.getLatestVersionResponse.versionNo");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(18)) goto parse_versionUpdateMsg;
         break;
@@ -614,16 +568,16 @@ bool getLatestVersionResponse::MergePartialFromCodedStream(
 
       // optional string versionUpdateMsg = 2;
       case 2: {
-        if (tag == 18) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_versionUpdateMsg:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_versionupdatemsg()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->versionupdatemsg().data(), this->versionupdatemsg().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.getLatestVersionResponse.versionUpdateMsg");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(24)) goto parse_errorCode;
         break;
@@ -631,25 +585,25 @@ bool getLatestVersionResponse::MergePartialFromCodedStream(
 
       // optional uint32 errorCode = 3;
       case 3: {
-        if (tag == 24) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_errorCode:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &errorcode_)));
           set_has_errorcode();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -657,35 +611,27 @@ bool getLatestVersionResponse::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.getLatestVersionResponse)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.getLatestVersionResponse)
-  return false;
 #undef DO_
 }
 
 void getLatestVersionResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.getLatestVersionResponse)
   // optional string versionNo = 1;
   if (has_versionno()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->versionno().data(), this->versionno().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getLatestVersionResponse.versionNo");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       1, this->versionno(), output);
   }
 
   // optional string versionUpdateMsg = 2;
   if (has_versionupdatemsg()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->versionupdatemsg().data(), this->versionupdatemsg().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getLatestVersionResponse.versionUpdateMsg");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       2, this->versionupdatemsg(), output);
   }
 
@@ -694,22 +640,19 @@ void getLatestVersionResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->errorcode(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.getLatestVersionResponse)
 }
 
 ::google::protobuf::uint8* getLatestVersionResponse::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.getLatestVersionResponse)
   // optional string versionNo = 1;
   if (has_versionno()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->versionno().data(), this->versionno().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getLatestVersionResponse.versionNo");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->versionno(), target);
@@ -717,10 +660,9 @@ void getLatestVersionResponse::SerializeWithCachedSizes(
 
   // optional string versionUpdateMsg = 2;
   if (has_versionupdatemsg()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->versionupdatemsg().data(), this->versionupdatemsg().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getLatestVersionResponse.versionUpdateMsg");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->versionupdatemsg(), target);
@@ -731,18 +673,17 @@ void getLatestVersionResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(3, this->errorcode(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.getLatestVersionResponse)
   return target;
 }
 
 int getLatestVersionResponse::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional string versionNo = 1;
     if (has_versionno()) {
       total_size += 1 +
@@ -765,7 +706,7 @@ int getLatestVersionResponse::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -777,7 +718,7 @@ int getLatestVersionResponse::ByteSize() const {
 }
 
 void getLatestVersionResponse::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const getLatestVersionResponse* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const getLatestVersionResponse*>(
       &from);
@@ -789,23 +730,19 @@ void getLatestVersionResponse::MergeFrom(const ::google::protobuf::Message& from
 }
 
 void getLatestVersionResponse::MergeFrom(const getLatestVersionResponse& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_versionno()) {
-      set_has_versionno();
-      versionno_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.versionno_);
+      set_versionno(from.versionno());
     }
     if (from.has_versionupdatemsg()) {
-      set_has_versionupdatemsg();
-      versionupdatemsg_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.versionupdatemsg_);
+      set_versionupdatemsg(from.versionupdatemsg());
     }
     if (from.has_errorcode()) {
       set_errorcode(from.errorcode());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void getLatestVersionResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -826,16 +763,14 @@ bool getLatestVersionResponse::IsInitialized() const {
 }
 
 void getLatestVersionResponse::Swap(getLatestVersionResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void getLatestVersionResponse::InternalSwap(getLatestVersionResponse* other) {
-  versionno_.Swap(&other->versionno_);
-  versionupdatemsg_.Swap(&other->versionupdatemsg_);
-  std::swap(errorcode_, other->errorcode_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(versionno_, other->versionno_);
+    std::swap(versionupdatemsg_, other->versionupdatemsg_);
+    std::swap(errorcode_, other->errorcode_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata getLatestVersionResponse::GetMetadata() const {
@@ -856,40 +791,41 @@ const int userLoginRequest::kMacAddressFieldNumber;
 #endif  // !_MSC_VER
 
 userLoginRequest::userLoginRequest()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.userLoginRequest)
 }
 
 void userLoginRequest::InitAsDefaultInstance() {
 }
 
 userLoginRequest::userLoginRequest(const userLoginRequest& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.userLoginRequest)
 }
 
 void userLoginRequest::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  password_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  macaddress_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  username_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  password_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  macaddress_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 userLoginRequest::~userLoginRequest() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.userLoginRequest)
   SharedDtor();
 }
 
 void userLoginRequest::SharedDtor() {
-  username_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  password_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  macaddress_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (username_ != &::google::protobuf::internal::kEmptyString) {
+    delete username_;
+  }
+  if (password_ != &::google::protobuf::internal::kEmptyString) {
+    delete password_;
+  }
+  if (macaddress_ != &::google::protobuf::internal::kEmptyString) {
+    delete macaddress_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -911,53 +847,49 @@ const userLoginRequest& userLoginRequest::default_instance() {
 
 userLoginRequest* userLoginRequest::default_instance_ = NULL;
 
-userLoginRequest* userLoginRequest::New(::google::protobuf::Arena* arena) const {
-  userLoginRequest* n = new userLoginRequest;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+userLoginRequest* userLoginRequest::New() const {
+  return new userLoginRequest;
 }
 
 void userLoginRequest::Clear() {
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (has_username()) {
-      username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (username_ != &::google::protobuf::internal::kEmptyString) {
+        username_->clear();
+      }
     }
     if (has_password()) {
-      password_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (password_ != &::google::protobuf::internal::kEmptyString) {
+        password_->clear();
+      }
     }
     if (has_macaddress()) {
-      macaddress_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (macaddress_ != &::google::protobuf::internal::kEmptyString) {
+        macaddress_->clear();
+      }
     }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool userLoginRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.userLoginRequest)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string username = 1;
       case 1: {
-        if (tag == 10) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_username()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->username().data(), this->username().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.userLoginRequest.username");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(18)) goto parse_password;
         break;
@@ -965,16 +897,16 @@ bool userLoginRequest::MergePartialFromCodedStream(
 
       // optional string password = 2;
       case 2: {
-        if (tag == 18) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_password:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_password()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->password().data(), this->password().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.userLoginRequest.password");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(26)) goto parse_macAddress;
         break;
@@ -982,27 +914,26 @@ bool userLoginRequest::MergePartialFromCodedStream(
 
       // optional string macAddress = 3;
       case 3: {
-        if (tag == 26) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_macAddress:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_macaddress()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->macaddress().data(), this->macaddress().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.userLoginRequest.macAddress");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1010,64 +941,52 @@ bool userLoginRequest::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.userLoginRequest)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.userLoginRequest)
-  return false;
 #undef DO_
 }
 
 void userLoginRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.userLoginRequest)
   // optional string username = 1;
   if (has_username()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->username().data(), this->username().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.username");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       1, this->username(), output);
   }
 
   // optional string password = 2;
   if (has_password()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->password().data(), this->password().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.password");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       2, this->password(), output);
   }
 
   // optional string macAddress = 3;
   if (has_macaddress()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->macaddress().data(), this->macaddress().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.macAddress");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       3, this->macaddress(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.userLoginRequest)
 }
 
 ::google::protobuf::uint8* userLoginRequest::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.userLoginRequest)
   // optional string username = 1;
   if (has_username()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->username().data(), this->username().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.username");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->username(), target);
@@ -1075,10 +994,9 @@ void userLoginRequest::SerializeWithCachedSizes(
 
   // optional string password = 2;
   if (has_password()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->password().data(), this->password().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.password");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->password(), target);
@@ -1086,27 +1004,25 @@ void userLoginRequest::SerializeWithCachedSizes(
 
   // optional string macAddress = 3;
   if (has_macaddress()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->macaddress().data(), this->macaddress().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginRequest.macAddress");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->macaddress(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.userLoginRequest)
   return target;
 }
 
 int userLoginRequest::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional string username = 1;
     if (has_username()) {
       total_size += 1 +
@@ -1129,7 +1045,7 @@ int userLoginRequest::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1141,7 +1057,7 @@ int userLoginRequest::ByteSize() const {
 }
 
 void userLoginRequest::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const userLoginRequest* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const userLoginRequest*>(
       &from);
@@ -1153,24 +1069,19 @@ void userLoginRequest::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void userLoginRequest::MergeFrom(const userLoginRequest& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_username()) {
-      set_has_username();
-      username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
+      set_username(from.username());
     }
     if (from.has_password()) {
-      set_has_password();
-      password_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.password_);
+      set_password(from.password());
     }
     if (from.has_macaddress()) {
-      set_has_macaddress();
-      macaddress_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.macaddress_);
+      set_macaddress(from.macaddress());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void userLoginRequest::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1191,16 +1102,14 @@ bool userLoginRequest::IsInitialized() const {
 }
 
 void userLoginRequest::Swap(userLoginRequest* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void userLoginRequest::InternalSwap(userLoginRequest* other) {
-  username_.Swap(&other->username_);
-  password_.Swap(&other->password_);
-  macaddress_.Swap(&other->macaddress_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(username_, other->username_);
+    std::swap(password_, other->password_);
+    std::swap(macaddress_, other->macaddress_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata userLoginRequest::GetMetadata() const {
@@ -1222,40 +1131,39 @@ const int userLoginResponse::kErrorCodeFieldNumber;
 #endif  // !_MSC_VER
 
 userLoginResponse::userLoginResponse()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.userLoginResponse)
 }
 
 void userLoginResponse::InitAsDefaultInstance() {
 }
 
 userLoginResponse::userLoginResponse(const userLoginResponse& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.userLoginResponse)
 }
 
 void userLoginResponse::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  sessionid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  username_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  sessionid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   logintime_ = GOOGLE_ULONGLONG(0);
   errorcode_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 userLoginResponse::~userLoginResponse() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.userLoginResponse)
   SharedDtor();
 }
 
 void userLoginResponse::SharedDtor() {
-  username_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  sessionid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (username_ != &::google::protobuf::internal::kEmptyString) {
+    delete username_;
+  }
+  if (sessionid_ != &::google::protobuf::internal::kEmptyString) {
+    delete sessionid_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -1277,65 +1185,46 @@ const userLoginResponse& userLoginResponse::default_instance() {
 
 userLoginResponse* userLoginResponse::default_instance_ = NULL;
 
-userLoginResponse* userLoginResponse::New(::google::protobuf::Arena* arena) const {
-  userLoginResponse* n = new userLoginResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+userLoginResponse* userLoginResponse::New() const {
+  return new userLoginResponse;
 }
 
 void userLoginResponse::Clear() {
-#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
-  &reinterpret_cast<userLoginResponse*>(16)->f) - \
-   reinterpret_cast<char*>(16))
-
-#define ZR_(first, last) do {                              \
-    size_t f = OFFSET_OF_FIELD_(first);                    \
-    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
-    ::memset(&first, 0, n);                                \
-  } while (0)
-
-  if (_has_bits_[0 / 32] & 15) {
-    ZR_(logintime_, errorcode_);
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (has_username()) {
-      username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (username_ != &::google::protobuf::internal::kEmptyString) {
+        username_->clear();
+      }
     }
     if (has_sessionid()) {
-      sessionid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (sessionid_ != &::google::protobuf::internal::kEmptyString) {
+        sessionid_->clear();
+      }
     }
+    logintime_ = GOOGLE_ULONGLONG(0);
+    errorcode_ = 0u;
   }
-
-#undef OFFSET_OF_FIELD_
-#undef ZR_
-
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool userLoginResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.userLoginResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string username = 1;
       case 1: {
-        if (tag == 10) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_username()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->username().data(), this->username().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.userLoginResponse.username");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(18)) goto parse_sessionId;
         break;
@@ -1343,16 +1232,16 @@ bool userLoginResponse::MergePartialFromCodedStream(
 
       // optional string sessionId = 2;
       case 2: {
-        if (tag == 18) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_sessionId:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_sessionid()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->sessionid().data(), this->sessionid().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.userLoginResponse.sessionId");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(24)) goto parse_loginTime;
         break;
@@ -1360,14 +1249,15 @@ bool userLoginResponse::MergePartialFromCodedStream(
 
       // optional uint64 loginTime = 3;
       case 3: {
-        if (tag == 24) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_loginTime:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_UINT64>(
                  input, &logintime_)));
           set_has_logintime();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(32)) goto parse_errorCode;
         break;
@@ -1375,25 +1265,25 @@ bool userLoginResponse::MergePartialFromCodedStream(
 
       // optional uint32 errorCode = 4;
       case 4: {
-        if (tag == 32) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_errorCode:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &errorcode_)));
           set_has_errorcode();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1401,35 +1291,27 @@ bool userLoginResponse::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.userLoginResponse)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.userLoginResponse)
-  return false;
 #undef DO_
 }
 
 void userLoginResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.userLoginResponse)
   // optional string username = 1;
   if (has_username()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->username().data(), this->username().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginResponse.username");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       1, this->username(), output);
   }
 
   // optional string sessionId = 2;
   if (has_sessionid()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->sessionid().data(), this->sessionid().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginResponse.sessionId");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       2, this->sessionid(), output);
   }
 
@@ -1443,22 +1325,19 @@ void userLoginResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->errorcode(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.userLoginResponse)
 }
 
 ::google::protobuf::uint8* userLoginResponse::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.userLoginResponse)
   // optional string username = 1;
   if (has_username()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->username().data(), this->username().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginResponse.username");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->username(), target);
@@ -1466,10 +1345,9 @@ void userLoginResponse::SerializeWithCachedSizes(
 
   // optional string sessionId = 2;
   if (has_sessionid()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->sessionid().data(), this->sessionid().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.userLoginResponse.sessionId");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->sessionid(), target);
@@ -1485,18 +1363,17 @@ void userLoginResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->errorcode(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.userLoginResponse)
   return target;
 }
 
 int userLoginResponse::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 15) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional string username = 1;
     if (has_username()) {
       total_size += 1 +
@@ -1526,7 +1403,7 @@ int userLoginResponse::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1538,7 +1415,7 @@ int userLoginResponse::ByteSize() const {
 }
 
 void userLoginResponse::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const userLoginResponse* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const userLoginResponse*>(
       &from);
@@ -1550,15 +1427,13 @@ void userLoginResponse::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void userLoginResponse::MergeFrom(const userLoginResponse& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_username()) {
-      set_has_username();
-      username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
+      set_username(from.username());
     }
     if (from.has_sessionid()) {
-      set_has_sessionid();
-      sessionid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.sessionid_);
+      set_sessionid(from.sessionid());
     }
     if (from.has_logintime()) {
       set_logintime(from.logintime());
@@ -1567,9 +1442,7 @@ void userLoginResponse::MergeFrom(const userLoginResponse& from) {
       set_errorcode(from.errorcode());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void userLoginResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1590,17 +1463,15 @@ bool userLoginResponse::IsInitialized() const {
 }
 
 void userLoginResponse::Swap(userLoginResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void userLoginResponse::InternalSwap(userLoginResponse* other) {
-  username_.Swap(&other->username_);
-  sessionid_.Swap(&other->sessionid_);
-  std::swap(logintime_, other->logintime_);
-  std::swap(errorcode_, other->errorcode_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(username_, other->username_);
+    std::swap(sessionid_, other->sessionid_);
+    std::swap(logintime_, other->logintime_);
+    std::swap(errorcode_, other->errorcode_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata userLoginResponse::GetMetadata() const {
@@ -1621,38 +1492,35 @@ const int tFile::kFilePermisFieldNumber;
 #endif  // !_MSC_VER
 
 tFile::tFile()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.tFile)
 }
 
 void tFile::InitAsDefaultInstance() {
 }
 
 tFile::tFile(const tFile& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.tFile)
 }
 
 void tFile::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  filename_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  filename_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   filetype_ = 0;
   filepermis_ = 0;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 tFile::~tFile() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.tFile)
   SharedDtor();
 }
 
 void tFile::SharedDtor() {
-  filename_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (filename_ != &::google::protobuf::internal::kEmptyString) {
+    delete filename_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -1674,62 +1542,41 @@ const tFile& tFile::default_instance() {
 
 tFile* tFile::default_instance_ = NULL;
 
-tFile* tFile::New(::google::protobuf::Arena* arena) const {
-  tFile* n = new tFile;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+tFile* tFile::New() const {
+  return new tFile;
 }
 
 void tFile::Clear() {
-#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
-  &reinterpret_cast<tFile*>(16)->f) - \
-   reinterpret_cast<char*>(16))
-
-#define ZR_(first, last) do {                              \
-    size_t f = OFFSET_OF_FIELD_(first);                    \
-    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
-    ::memset(&first, 0, n);                                \
-  } while (0)
-
-  if (_has_bits_[0 / 32] & 7) {
-    ZR_(filetype_, filepermis_);
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (has_filename()) {
-      filename_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (filename_ != &::google::protobuf::internal::kEmptyString) {
+        filename_->clear();
+      }
     }
+    filetype_ = 0;
+    filepermis_ = 0;
   }
-
-#undef OFFSET_OF_FIELD_
-#undef ZR_
-
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool tFile::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.tFile)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional string fileName = 1;
       case 1: {
-        if (tag == 10) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_filename()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->filename().data(), this->filename().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.tFile.fileName");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(16)) goto parse_fileType;
         break;
@@ -1737,7 +1584,8 @@ bool tFile::MergePartialFromCodedStream(
 
       // optional .DFMS.ROUTE.eFileType fileType = 2;
       case 2: {
-        if (tag == 16) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_fileType:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
@@ -1749,7 +1597,7 @@ bool tFile::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(2, value);
           }
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(24)) goto parse_filePermis;
         break;
@@ -1757,7 +1605,8 @@ bool tFile::MergePartialFromCodedStream(
 
       // optional .DFMS.ROUTE.eFilePermis filePermis = 3;
       case 3: {
-        if (tag == 24) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_filePermis:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
@@ -1769,18 +1618,17 @@ bool tFile::MergePartialFromCodedStream(
             mutable_unknown_fields()->AddVarint(3, value);
           }
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -1788,25 +1636,18 @@ bool tFile::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.tFile)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.tFile)
-  return false;
 #undef DO_
 }
 
 void tFile::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.tFile)
   // optional string fileName = 1;
   if (has_filename()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->filename().data(), this->filename().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.tFile.fileName");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       1, this->filename(), output);
   }
 
@@ -1822,22 +1663,19 @@ void tFile::SerializeWithCachedSizes(
       3, this->filepermis(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.tFile)
 }
 
 ::google::protobuf::uint8* tFile::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.tFile)
   // optional string fileName = 1;
   if (has_filename()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->filename().data(), this->filename().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.tFile.fileName");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->filename(), target);
@@ -1855,18 +1693,17 @@ void tFile::SerializeWithCachedSizes(
       3, this->filepermis(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.tFile)
   return target;
 }
 
 int tFile::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional string fileName = 1;
     if (has_filename()) {
       total_size += 1 +
@@ -1887,7 +1724,7 @@ int tFile::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -1899,7 +1736,7 @@ int tFile::ByteSize() const {
 }
 
 void tFile::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const tFile* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const tFile*>(
       &from);
@@ -1911,11 +1748,10 @@ void tFile::MergeFrom(const ::google::protobuf::Message& from) {
 }
 
 void tFile::MergeFrom(const tFile& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_filename()) {
-      set_has_filename();
-      filename_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.filename_);
+      set_filename(from.filename());
     }
     if (from.has_filetype()) {
       set_filetype(from.filetype());
@@ -1924,9 +1760,7 @@ void tFile::MergeFrom(const tFile& from) {
       set_filepermis(from.filepermis());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void tFile::CopyFrom(const ::google::protobuf::Message& from) {
@@ -1947,16 +1781,14 @@ bool tFile::IsInitialized() const {
 }
 
 void tFile::Swap(tFile* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void tFile::InternalSwap(tFile* other) {
-  filename_.Swap(&other->filename_);
-  std::swap(filetype_, other->filetype_);
-  std::swap(filepermis_, other->filepermis_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(filename_, other->filename_);
+    std::swap(filetype_, other->filetype_);
+    std::swap(filepermis_, other->filepermis_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata tFile::GetMetadata() const {
@@ -1977,39 +1809,38 @@ const int getDirFilesNameRequest::kDirStrFieldNumber;
 #endif  // !_MSC_VER
 
 getDirFilesNameRequest::getDirFilesNameRequest()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.getDirFilesNameRequest)
 }
 
 void getDirFilesNameRequest::InitAsDefaultInstance() {
 }
 
 getDirFilesNameRequest::getDirFilesNameRequest(const getDirFilesNameRequest& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.getDirFilesNameRequest)
 }
 
 void getDirFilesNameRequest::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   reqid_ = 0u;
-  authuuid_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  dirstr_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  authuuid_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
+  dirstr_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 getDirFilesNameRequest::~getDirFilesNameRequest() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.getDirFilesNameRequest)
   SharedDtor();
 }
 
 void getDirFilesNameRequest::SharedDtor() {
-  authuuid_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  dirstr_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (authuuid_ != &::google::protobuf::internal::kEmptyString) {
+    delete authuuid_;
+  }
+  if (dirstr_ != &::google::protobuf::internal::kEmptyString) {
+    delete dirstr_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -2031,49 +1862,44 @@ const getDirFilesNameRequest& getDirFilesNameRequest::default_instance() {
 
 getDirFilesNameRequest* getDirFilesNameRequest::default_instance_ = NULL;
 
-getDirFilesNameRequest* getDirFilesNameRequest::New(::google::protobuf::Arena* arena) const {
-  getDirFilesNameRequest* n = new getDirFilesNameRequest;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+getDirFilesNameRequest* getDirFilesNameRequest::New() const {
+  return new getDirFilesNameRequest;
 }
 
 void getDirFilesNameRequest::Clear() {
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     reqid_ = 0u;
     if (has_authuuid()) {
-      authuuid_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (authuuid_ != &::google::protobuf::internal::kEmptyString) {
+        authuuid_->clear();
+      }
     }
     if (has_dirstr()) {
-      dirstr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (dirstr_ != &::google::protobuf::internal::kEmptyString) {
+        dirstr_->clear();
+      }
     }
   }
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool getDirFilesNameRequest::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.getDirFilesNameRequest)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 reqId = 1;
       case 1: {
-        if (tag == 8) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &reqid_)));
           set_has_reqid();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(18)) goto parse_authUUID;
         break;
@@ -2081,16 +1907,16 @@ bool getDirFilesNameRequest::MergePartialFromCodedStream(
 
       // optional string authUUID = 2;
       case 2: {
-        if (tag == 18) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_authUUID:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_authuuid()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->authuuid().data(), this->authuuid().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.getDirFilesNameRequest.authUUID");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(26)) goto parse_dirStr;
         break;
@@ -2098,27 +1924,26 @@ bool getDirFilesNameRequest::MergePartialFromCodedStream(
 
       // optional string dirStr = 3;
       case 3: {
-        if (tag == 26) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_dirStr:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_dirstr()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->dirstr().data(), this->dirstr().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.getDirFilesNameRequest.dirStr");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2126,18 +1951,12 @@ bool getDirFilesNameRequest::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.getDirFilesNameRequest)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.getDirFilesNameRequest)
-  return false;
 #undef DO_
 }
 
 void getDirFilesNameRequest::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.getDirFilesNameRequest)
   // optional uint32 reqId = 1;
   if (has_reqid()) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->reqid(), output);
@@ -2145,34 +1964,30 @@ void getDirFilesNameRequest::SerializeWithCachedSizes(
 
   // optional string authUUID = 2;
   if (has_authuuid()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->authuuid().data(), this->authuuid().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameRequest.authUUID");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       2, this->authuuid(), output);
   }
 
   // optional string dirStr = 3;
   if (has_dirstr()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dirstr().data(), this->dirstr().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameRequest.dirStr");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       3, this->dirstr(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.getDirFilesNameRequest)
 }
 
 ::google::protobuf::uint8* getDirFilesNameRequest::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.getDirFilesNameRequest)
   // optional uint32 reqId = 1;
   if (has_reqid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->reqid(), target);
@@ -2180,10 +1995,9 @@ void getDirFilesNameRequest::SerializeWithCachedSizes(
 
   // optional string authUUID = 2;
   if (has_authuuid()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->authuuid().data(), this->authuuid().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameRequest.authUUID");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->authuuid(), target);
@@ -2191,27 +2005,25 @@ void getDirFilesNameRequest::SerializeWithCachedSizes(
 
   // optional string dirStr = 3;
   if (has_dirstr()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dirstr().data(), this->dirstr().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameRequest.dirStr");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->dirstr(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.getDirFilesNameRequest)
   return target;
 }
 
 int getDirFilesNameRequest::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 7) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional uint32 reqId = 1;
     if (has_reqid()) {
       total_size += 1 +
@@ -2234,7 +2046,7 @@ int getDirFilesNameRequest::ByteSize() const {
     }
 
   }
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -2246,7 +2058,7 @@ int getDirFilesNameRequest::ByteSize() const {
 }
 
 void getDirFilesNameRequest::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const getDirFilesNameRequest* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const getDirFilesNameRequest*>(
       &from);
@@ -2258,23 +2070,19 @@ void getDirFilesNameRequest::MergeFrom(const ::google::protobuf::Message& from) 
 }
 
 void getDirFilesNameRequest::MergeFrom(const getDirFilesNameRequest& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_reqid()) {
       set_reqid(from.reqid());
     }
     if (from.has_authuuid()) {
-      set_has_authuuid();
-      authuuid_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.authuuid_);
+      set_authuuid(from.authuuid());
     }
     if (from.has_dirstr()) {
-      set_has_dirstr();
-      dirstr_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dirstr_);
+      set_dirstr(from.dirstr());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void getDirFilesNameRequest::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2295,16 +2103,14 @@ bool getDirFilesNameRequest::IsInitialized() const {
 }
 
 void getDirFilesNameRequest::Swap(getDirFilesNameRequest* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void getDirFilesNameRequest::InternalSwap(getDirFilesNameRequest* other) {
-  std::swap(reqid_, other->reqid_);
-  authuuid_.Swap(&other->authuuid_);
-  dirstr_.Swap(&other->dirstr_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(reqid_, other->reqid_);
+    std::swap(authuuid_, other->authuuid_);
+    std::swap(dirstr_, other->dirstr_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata getDirFilesNameRequest::GetMetadata() const {
@@ -2326,38 +2132,35 @@ const int getDirFilesNameResponse::kErrorCodeFieldNumber;
 #endif  // !_MSC_VER
 
 getDirFilesNameResponse::getDirFilesNameResponse()
-  : ::google::protobuf::Message() , _internal_metadata_(NULL)  {
+  : ::google::protobuf::Message() {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:DFMS.ROUTE.getDirFilesNameResponse)
 }
 
 void getDirFilesNameResponse::InitAsDefaultInstance() {
 }
 
 getDirFilesNameResponse::getDirFilesNameResponse(const getDirFilesNameResponse& from)
-  : ::google::protobuf::Message(),
-    _internal_metadata_(NULL) {
+  : ::google::protobuf::Message() {
   SharedCtor();
   MergeFrom(from);
-  // @@protoc_insertion_point(copy_constructor:DFMS.ROUTE.getDirFilesNameResponse)
 }
 
 void getDirFilesNameResponse::SharedCtor() {
-  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
   reqid_ = 0u;
-  dirstr_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  dirstr_ = const_cast< ::std::string*>(&::google::protobuf::internal::kEmptyString);
   errorcode_ = 0u;
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 getDirFilesNameResponse::~getDirFilesNameResponse() {
-  // @@protoc_insertion_point(destructor:DFMS.ROUTE.getDirFilesNameResponse)
   SharedDtor();
 }
 
 void getDirFilesNameResponse::SharedDtor() {
-  dirstr_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (dirstr_ != &::google::protobuf::internal::kEmptyString) {
+    delete dirstr_;
+  }
   if (this != default_instance_) {
   }
 }
@@ -2379,61 +2182,41 @@ const getDirFilesNameResponse& getDirFilesNameResponse::default_instance() {
 
 getDirFilesNameResponse* getDirFilesNameResponse::default_instance_ = NULL;
 
-getDirFilesNameResponse* getDirFilesNameResponse::New(::google::protobuf::Arena* arena) const {
-  getDirFilesNameResponse* n = new getDirFilesNameResponse;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+getDirFilesNameResponse* getDirFilesNameResponse::New() const {
+  return new getDirFilesNameResponse;
 }
 
 void getDirFilesNameResponse::Clear() {
-#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
-  &reinterpret_cast<getDirFilesNameResponse*>(16)->f) - \
-   reinterpret_cast<char*>(16))
-
-#define ZR_(first, last) do {                              \
-    size_t f = OFFSET_OF_FIELD_(first);                    \
-    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
-    ::memset(&first, 0, n);                                \
-  } while (0)
-
-  if (_has_bits_[0 / 32] & 11) {
-    ZR_(reqid_, errorcode_);
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    reqid_ = 0u;
     if (has_dirstr()) {
-      dirstr_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+      if (dirstr_ != &::google::protobuf::internal::kEmptyString) {
+        dirstr_->clear();
+      }
     }
+    errorcode_ = 0u;
   }
-
-#undef OFFSET_OF_FIELD_
-#undef ZR_
-
   files_.Clear();
   ::memset(_has_bits_, 0, sizeof(_has_bits_));
-  if (_internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->Clear();
-  }
+  mutable_unknown_fields()->Clear();
 }
 
 bool getDirFilesNameResponse::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) return false
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:DFMS.ROUTE.getDirFilesNameResponse)
-  for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
-    tag = p.first;
-    if (!p.second) goto handle_unusual;
+  while ((tag = input->ReadTag()) != 0) {
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional uint32 reqId = 1;
       case 1: {
-        if (tag == 8) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &reqid_)));
           set_has_reqid();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(18)) goto parse_dirStr;
         break;
@@ -2441,16 +2224,16 @@ bool getDirFilesNameResponse::MergePartialFromCodedStream(
 
       // optional string dirStr = 2;
       case 2: {
-        if (tag == 18) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_dirStr:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_dirstr()));
-          ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+          ::google::protobuf::internal::WireFormat::VerifyUTF8String(
             this->dirstr().data(), this->dirstr().length(),
-            ::google::protobuf::internal::WireFormat::PARSE,
-            "DFMS.ROUTE.getDirFilesNameResponse.dirStr");
+            ::google::protobuf::internal::WireFormat::PARSE);
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(26)) goto parse_files;
         break;
@@ -2458,12 +2241,13 @@ bool getDirFilesNameResponse::MergePartialFromCodedStream(
 
       // repeated .DFMS.ROUTE.tFile files = 3;
       case 3: {
-        if (tag == 26) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED) {
          parse_files:
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                 input, add_files()));
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
         if (input->ExpectTag(26)) goto parse_files;
         if (input->ExpectTag(32)) goto parse_errorCode;
@@ -2472,25 +2256,25 @@ bool getDirFilesNameResponse::MergePartialFromCodedStream(
 
       // optional uint32 errorCode = 4;
       case 4: {
-        if (tag == 32) {
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_VARINT) {
          parse_errorCode:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
                  input, &errorcode_)));
           set_has_errorcode();
         } else {
-          goto handle_unusual;
+          goto handle_uninterpreted;
         }
-        if (input->ExpectAtEnd()) goto success;
+        if (input->ExpectAtEnd()) return true;
         break;
       }
 
       default: {
-      handle_unusual:
-        if (tag == 0 ||
-            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+      handle_uninterpreted:
+        if (::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
             ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
-          goto success;
+          return true;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
               input, tag, mutable_unknown_fields()));
@@ -2498,18 +2282,12 @@ bool getDirFilesNameResponse::MergePartialFromCodedStream(
       }
     }
   }
-success:
-  // @@protoc_insertion_point(parse_success:DFMS.ROUTE.getDirFilesNameResponse)
   return true;
-failure:
-  // @@protoc_insertion_point(parse_failure:DFMS.ROUTE.getDirFilesNameResponse)
-  return false;
 #undef DO_
 }
 
 void getDirFilesNameResponse::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:DFMS.ROUTE.getDirFilesNameResponse)
   // optional uint32 reqId = 1;
   if (has_reqid()) {
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->reqid(), output);
@@ -2517,16 +2295,15 @@ void getDirFilesNameResponse::SerializeWithCachedSizes(
 
   // optional string dirStr = 2;
   if (has_dirstr()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dirstr().data(), this->dirstr().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameResponse.dirStr");
-    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
+    ::google::protobuf::internal::WireFormatLite::WriteString(
       2, this->dirstr(), output);
   }
 
   // repeated .DFMS.ROUTE.tFile files = 3;
-  for (unsigned int i = 0, n = this->files_size(); i < n; i++) {
+  for (int i = 0; i < this->files_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
       3, this->files(i), output);
   }
@@ -2536,16 +2313,14 @@ void getDirFilesNameResponse::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteUInt32(4, this->errorcode(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         unknown_fields(), output);
   }
-  // @@protoc_insertion_point(serialize_end:DFMS.ROUTE.getDirFilesNameResponse)
 }
 
 ::google::protobuf::uint8* getDirFilesNameResponse::SerializeWithCachedSizesToArray(
     ::google::protobuf::uint8* target) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DFMS.ROUTE.getDirFilesNameResponse)
   // optional uint32 reqId = 1;
   if (has_reqid()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(1, this->reqid(), target);
@@ -2553,17 +2328,16 @@ void getDirFilesNameResponse::SerializeWithCachedSizes(
 
   // optional string dirStr = 2;
   if (has_dirstr()) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    ::google::protobuf::internal::WireFormat::VerifyUTF8String(
       this->dirstr().data(), this->dirstr().length(),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "DFMS.ROUTE.getDirFilesNameResponse.dirStr");
+      ::google::protobuf::internal::WireFormat::SERIALIZE);
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->dirstr(), target);
   }
 
   // repeated .DFMS.ROUTE.tFile files = 3;
-  for (unsigned int i = 0, n = this->files_size(); i < n; i++) {
+  for (int i = 0; i < this->files_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteMessageNoVirtualToArray(
         3, this->files(i), target);
@@ -2574,18 +2348,17 @@ void getDirFilesNameResponse::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteUInt32ToArray(4, this->errorcode(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         unknown_fields(), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DFMS.ROUTE.getDirFilesNameResponse)
   return target;
 }
 
 int getDirFilesNameResponse::ByteSize() const {
   int total_size = 0;
 
-  if (_has_bits_[0 / 32] & 11) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // optional uint32 reqId = 1;
     if (has_reqid()) {
       total_size += 1 +
@@ -2616,7 +2389,7 @@ int getDirFilesNameResponse::ByteSize() const {
         this->files(i));
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
         unknown_fields());
@@ -2628,7 +2401,7 @@ int getDirFilesNameResponse::ByteSize() const {
 }
 
 void getDirFilesNameResponse::MergeFrom(const ::google::protobuf::Message& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   const getDirFilesNameResponse* source =
     ::google::protobuf::internal::dynamic_cast_if_available<const getDirFilesNameResponse*>(
       &from);
@@ -2640,23 +2413,20 @@ void getDirFilesNameResponse::MergeFrom(const ::google::protobuf::Message& from)
 }
 
 void getDirFilesNameResponse::MergeFrom(const getDirFilesNameResponse& from) {
-  if (GOOGLE_PREDICT_FALSE(&from == this)) MergeFromFail(__LINE__);
+  GOOGLE_CHECK_NE(&from, this);
   files_.MergeFrom(from.files_);
   if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     if (from.has_reqid()) {
       set_reqid(from.reqid());
     }
     if (from.has_dirstr()) {
-      set_has_dirstr();
-      dirstr_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.dirstr_);
+      set_dirstr(from.dirstr());
     }
     if (from.has_errorcode()) {
       set_errorcode(from.errorcode());
     }
   }
-  if (from._internal_metadata_.have_unknown_fields()) {
-    mutable_unknown_fields()->MergeFrom(from.unknown_fields());
-  }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void getDirFilesNameResponse::CopyFrom(const ::google::protobuf::Message& from) {
@@ -2677,17 +2447,15 @@ bool getDirFilesNameResponse::IsInitialized() const {
 }
 
 void getDirFilesNameResponse::Swap(getDirFilesNameResponse* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void getDirFilesNameResponse::InternalSwap(getDirFilesNameResponse* other) {
-  std::swap(reqid_, other->reqid_);
-  dirstr_.Swap(&other->dirstr_);
-  files_.UnsafeArenaSwap(&other->files_);
-  std::swap(errorcode_, other->errorcode_);
-  std::swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  std::swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(reqid_, other->reqid_);
+    std::swap(dirstr_, other->dirstr_);
+    files_.Swap(&other->files_);
+    std::swap(errorcode_, other->errorcode_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata getDirFilesNameResponse::GetMetadata() const {

@@ -26,6 +26,7 @@ static int sign[6] =
 
 void sign_handler(int _sign)
 {
+    DEBUG_INFO("[sign_handler] _sign="<<_sign);
     write_log(E_LOG_INFO,"[sign_handler]");
     isRun = false;
     // sem_post(requestDataQueue->notify_add_sem);
@@ -74,8 +75,9 @@ static void __run(x_list* _list)
 	handlerSession* __pHandlerSession = (handlerSession*)__pList->data;
 	assert(__pHandlerSession);
 
-	// _pHandlerSession->
-
+	Message __msg;
+	queue_get_data(requestDataQueue,&__msg);
+	__pHandlerSession->handleMsg(__msg);
     }
     __ioServiceThread.join();
 
@@ -86,6 +88,8 @@ static void __run(x_list* _list)
 	xlib_free(__listNode->data);
     }
     delete_all_list(_list);
+    
+    delete_queue(requestDataQueue);
 }
 
 static void _run()
@@ -98,14 +102,14 @@ static void _run()
     // init request queue
     x_queue_config __config;
     __config.x_read_mode = E_QueueReadTail;
-    strcpy(__config.name,"requestDataQueue");
+    strcpy(__config.name,"requestDataQueue1");
     requestDataQueue = create_queue(&__config);
     assert(requestDataQueue);
 
     // init socket
     using boost::asio::ip::tcp;
     tcp::endpoint __endPoint(tcp::v4(),listenPort);
-    serverApp __sa(ioService,__endPoint);
+    serverApp __sa(ioService,__endPoint,requestDataQueue);
 
     // set runing
     isRun = true;
