@@ -1,8 +1,8 @@
 /*************************************************************************
-    > File Name: DBServerConn.h
-    > Author: zj.tian
-    > Mail: t657645537@126.com 
-    > Created Time: 2015年02月10日 星期二 16时47分53秒
+  > File Name: DBServerConn.h
+  > Author: zj.tian
+  > Mail: t657645537@126.com 
+  > Created Time: 2015年02月10日 星期二 16时47分53秒
  ************************************************************************/
 
 #ifndef _DBSERVERCONN_H_
@@ -15,25 +15,25 @@
 using namespace std;
 
 class DBServerConn : public conn {
- public:
-    DBServerConn(){};
-    ~DBServerConn(){};
+	public:
+		DBServerConn(){};
+		~DBServerConn(){};
 
-    virtual void responseMsg(Message& _msg)
-    {
-	DEBUG_INFO("[DBServerConn::responseMsg]");
-	DEBUG_INFO("[DBServerConn::responseMsg] end");
-    };
+		virtual void responseMsg(Message& _msg)
+		{
+			DEBUG_INFO("[DBServerConn::responseMsg]");
+			DEBUG_INFO("[DBServerConn::responseMsg] end");
+		};
 };
 
 static DBServerConn dbServerConn;
 DBServerConn& getSingleDBServerConn()
 {
-    return dbServerConn;
+	return dbServerConn;
 };
 DBServerConn* getSingleDBServerConn()
 {
-    return &dbServerConn;
+	return &dbServerConn;
 };
 
 #endif

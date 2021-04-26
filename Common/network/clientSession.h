@@ -1,8 +1,8 @@
 /*************************************************************************
-    > File Name: clientSession.h
-    > Author: zj.tian
-    > Mail: t657645537@126.com 
-    > Created Time: 2015年02月02日 星期一 15时52分45秒
+  > File Name: clientSession.h
+  > Author: zj.tian
+  > Mail: t657645537@126.com 
+  > Created Time: 2015年02月02日 星期一 15时52分45秒
  ************************************************************************/
 
 #ifndef NETWORK_CLIENT_SESSION
@@ -11,22 +11,19 @@
 #include "__common.h"
 #include <string>
 #include <boost/enable_shared_from_this.hpp>
-#include <xlib/queue.h>
-US_XLIB_NS;
 
 class clientSession
-	: public boost::enable_shared_from_this<clientSession>
+: public boost::enable_shared_from_this<clientSession>
 {
 	public:
- clientSession(boost::asio::io_service& ioservice,x_queue* queue)
-     :m_socket(ioservice),
-     m_pQueue(queue)
-		{
-		    cleanData();
-		}
+		clientSession(boost::asio::io_service& ioservice)
+			:m_socket(ioservice)
+	{
+		cleanData();
+	}
 		~clientSession()
 		{
-		    m_socket.close();
+			m_socket.close();
 		}
 
 		tcp::socket& socket()
@@ -38,8 +35,8 @@ class clientSession
 	private:
 		void cleanData()
 		{
-		    memset((void*)m_data,0,max_len);
-		    memset((void*)m_head,0,sizeof(dataHead));
+			memset((void*)m_data,0,max_len);
+			memset((void*)m_head,0,sizeof(dataHead));
 		}
 		void handle_write(const boost::system::error_code& error);
 		void handle_read_head(const boost::system::error_code& error,std::size_t len);
@@ -51,7 +48,6 @@ class clientSession
 		tcp::socket m_socket;
 		char m_head[sizeof(dataHead)];
 		char m_data[max_len];
-		x_queue* m_pQueue;
 };
 
 #endif

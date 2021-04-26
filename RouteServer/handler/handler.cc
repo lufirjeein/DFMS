@@ -1,133 +1,102 @@
 #include "handler.h"
 #include "handlerSession.h"
-#include <xlib/list.h>
 #include <xlib/constants.h>
-#include <xlib/queue.h>
-#include <xlib/net.h>
-#include <xlib/log.h>
-#include <xlib/pthreadPool.h>
 #include <assert.h>
 #include "network/serverApp.h"
+#include "network/port.h"
 #include <boost/thread.hpp>
 #include <boost/foreach.hpp>
 #include <stdlib.h>
 #include <signal.h>
-US_XLIB_NS;
+#include <glog/logging.h>
+#include <vector>
+#include <queue>
+// US_XLIB_NS;
 
-static boost::asio::io_service ioService;
+boost::asio::io_service ioService;
 static bool isRun = false;
-const static int listenPort = 8888;
 const static int sessionNumber = 16;
-static x_queue* requestDataQueue = NULL; 
+std::queue<Message> requestDataQueue; 
+boost::condition_variable requestDataCondition;
+boost::mutex requestDataMutex;
+boost::unique_lock<boost::shared_mutex> requestDataQueueLock; // queue lock
 static int sign[6] = 
 {
-    SIGABRT,SIGFPE,SIGILL,SIGINT,SIGSEGV,SIGTERM
+	SIGABRT,SIGFPE,SIGILL,SIGINT,SIGSEGV,SIGTERM
 };
 
 void sign_handler(int _sign)
 {
-    DEBUG_INFO("[sign_handler] _sign="<<_sign);
-    write_log(E_LOG_INFO,"[sign_handler]");
-    isRun = false;
-    // sem_post(requestDataQueue->notify_add_sem);
-    // sem_post(requestDataQueue->notify_add_sem);
-    sem_post(requestDataQueue->notify_add_sem);
-    ioService.stop();
+	LOG(INFO) << "[sign_handler] _sing=" << _sign;
+	if (isRun) {
+		DEBUG_INFO("[sign_handler] _sign="<<_sign);
+		isRun = false;
+		requestDataCondition.notify_all();
+		ioService.stop();
+	}
 }
 
-void read(int fd, char* buf,int len)
+void loopHandleWork(std::vector<handlerSession>& _handlerSessionVec)
 {
-    if (NULL == requestDataQueue) {
-	write_log(E_LOG_ERROR,"requestDataQueue is NULL");
-	return ;
-    }
+	while (isRun) {
+		boost::unique_lock<boost::mutex> lock(requestDataMutex);
+		requestDataCondition.wait(lock);
 
-    if (NULL == queue_add_data(requestDataQueue,buf,strlen(buf))) {
-	write_log(E_LOG_INFO,"queue_add_data fail");
-	return ;
-    }
+		if (!isRun) break ;
+		if (requestDataQueue.empty()) continue;
+
+		requestDataQueueLock.lock();
+		Message __msg = requestDataQueue.front();
+		requestDataQueueLock.unlock();
+			
+		handlerSession __handlerSession = _handlerSessionVec[__msg.reqID%sessionNumber];
+		__handlerSession.handleMsg(__msg);
+
+		requestDataQueueLock.lock();
+		requestDataQueue.pop();
+		requestDataQueueLock.unlock();
+	}
 }
 
-void read_head(int fd, char* buf,int len)
+static void __run(std::vector<handlerSession>& _handlerSessionVec)
 {
-    read_buf(fd,100,read);
-}
+	boost::thread_group __threadGroup;
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	__threadGroup.create_thread(boost::bind(&boost::asio::io_service::run,&ioService));
+	ioService.post(boost::bind(&loopHandleWork,_handlerSessionVec));
+	ioService.post(boost::bind(&loopHandleWork,_handlerSessionVec));
+	ioService.post(boost::bind(&loopHandleWork,_handlerSessionVec));
+	ioService.post(boost::bind(&loopHandleWork,_handlerSessionVec));
 
-void accept(int fd)
-{
-    read_buf(fd,1,read_head);
-}
-
-static void __run(x_list* _list)
-{
-    boost::thread __ioServiceThread(boost::bind(&boost::asio::io_service::run,&ioService));
-
-    int __i = 0;
-    while (isRun) {
-	__i=(++__i)%sessionNumber;
-	sem_wait(requestDataQueue->notify_add_sem);
-
-	if (!isRun) break ;
-
-	x_list* __pList = get_index_list(_list,__i);
-	assert(__pList);
-
-	handlerSession* __pHandlerSession = (handlerSession*)__pList->data;
-	assert(__pHandlerSession);
-
-	Message __msg;
-	queue_get_data(requestDataQueue,&__msg);
-	__pHandlerSession->handleMsg(__msg);
-    }
-    __ioServiceThread.join();
-
-    // remove handlerSession
-    for (__i = 0;__i < sessionNumber;++__i) {
-	x_list* __listNode = get_index_list(_list,__i);
-	assert(__listNode);
-	xlib_free(__listNode->data);
-    }
-    delete_all_list(_list);
-    
-    delete_queue(requestDataQueue);
+	__threadGroup.join_all();
 }
 
 static void _run()
 {
-    BOOST_FOREACH(int _sign,sign)
-    {
-	signal(_sign,sign_handler);
-    }
-
-    // init request queue
-    x_queue_config __config;
-    __config.x_read_mode = E_QueueReadTail;
-    strcpy(__config.name,"requestDataQueue1");
-    requestDataQueue = create_queue(&__config);
-    assert(requestDataQueue);
-
-    // init socket
-    using boost::asio::ip::tcp;
-    tcp::endpoint __endPoint(tcp::v4(),listenPort);
-    serverApp __sa(ioService,__endPoint,requestDataQueue);
-
-    // set runing
-    isRun = true;
-
-    x_list* __list = get_singleton_list();
-    assert(__list);
-    if (NULL != __list) {
-	int __i;
-	for (__i=0;__i<sessionNumber;++__i) {
-	    handlerSession* __pHs = new handlerSession();
-	    assert(__pHs);
-	    add_node_end(__list,__pHs);
+	BOOST_FOREACH(int _sign,sign)
+	{
+		signal(_sign,sign_handler);
 	}
-	return __run(__list);	
-    }
+
+	// init socket
+	using boost::asio::ip::tcp;
+	tcp::endpoint __endPoint(tcp::v4(),NETWORK_ALL_PORT::nRouteServerPort);
+	serverApp __sa(ioService,__endPoint);
+
+	// set runing
+	isRun = true;
+
+	std::vector<handlerSession> __handlerSessionVec(sessionNumber);
+	return __run(__handlerSessionVec);	
 }
 
 void run()
 {
-    return _run();
+	return _run();
 }

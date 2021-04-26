@@ -1,6 +1,7 @@
 #include "handlerSession.h"
 #include "defs/RouteDefs.h"
 #include <xlib/memory.h>
+US_XLIB_NS
 
 handlerSession::handlerSession() 
 {

@@ -6,9 +6,7 @@
  ************************************************************************/
 
 #include <iostream>
-#include <xlib/log.h>
 #include <xlib/constants.h>
-#include <xlib/pthreadPool.h>
 #include <unistd.h>
 #include "proto/route.pb.h"
 #include "handler/handler.h"
@@ -17,6 +15,7 @@
 #include <google/protobuf/text_format.h>
 #undef _SHARED_PTR_H
 #include <string>
+#include <glog/logging.h>
 #include "network/serverApp.h"
 #include "network/conn.h"
 using namespace std;
@@ -26,17 +25,18 @@ US_XLIB_NS;
 
 int main(int argc,const char* argv[])
 {
-    int ret = create_thread_pool();
-    assert(ret == 0);
-    ret = init_log(true);
-    assert(ret == 0);
-    write_log(E_LOG_INFO,"RouteServer starting");
+	google::InitGoogleLogging(argv[0]);
+//    int ret = create_thread_pool();
+//    assert(ret == 0);
+//    ret = init_log(true);
+//    assert(ret == 0);
+//    write_log(E_LOG_INFO,"RouteServer starting");
 	  
     run();
    
-    sleep(2);
-    destroy_log();
-    destroy_thread_pool();
+//    sleep(2);
+//    destroy_log();
+//    destroy_thread_pool();
 
     return 0;
 }
