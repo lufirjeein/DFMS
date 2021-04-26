@@ -1,0 +1,9 @@
+AUTOMAKE_OPTIONS = foreign subdir-objects
+#SUBDIRS = PluginManager
+#bin_PROGRAMS = BaseFramework PluginContainer
+#BaseFramework_SOURCES = ./PluginManager/PluginManager.cc 
+lib_LTLIBRARIES=libRouteServer.la
+libRouteServer_la_SOURCES = ./RouteServer/RouteServer.cc
+AM_CPPFLAGS = -I./
+DEFS += -DDEBUG
+LIBS += -lboost_thread -lboost_system -lglog -ldl -lpthread
